@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+/* Apply styles to all elements on the page */
+* {
+    /* Remove borders from all elements */
+    border: 0px;
+
+    /* Remove margins from all elements */
+    margin: 0px;
+
+    /* Set the font family to 'Poppins' and use sans-serif as a fallback */
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* Set the height of the element to 100% of its parent's height */
+    height: 100%;
+
+    /* Set the width of the element to 100% of its parent's width */
+    width: 100%;
+}
+
+
+body {
+    /* Set background image to not repeat */
+    background-repeat: no-repeat;
+
+    /* Scale the background image to cover the entire background area */
+    background-size: cover;
+
+    /* Set the background color to a light gray */
+    background-color: #ece9e9;
+
+    /* Remove any extra space at the bottom of the page */
+    padding-bottom: 0px;
+
+    /* Make the width of the page fill the entire screen */
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+/************************ Nav****************************/
+/* Style for the navigation menu */
+nav {
+    position: static; /* Positioned normally */
+    background-color: #333; /* Background color of the navigation */
+    color: #fff; /* Text color in the navigation */
+    margin: 0px; /* No margin */
+    padding: 0px; /* No padding */
+    width: 100%; /* Full width of the viewport */
+    display: flex; /* Flex display to align items */
+    justify-content: center; /* Center align items horizontally */
+    z-index: 5; /* Layer position on top of other content */
+}
+
+/* Style for the navigation list */
+nav ul {
+    list-style-type: none; /* Remove default list bullets */
+    margin: 0; /* No margin */
+    padding: 0px; /* No padding */
+    display: flex; /* Flex display to align items */
+    justify-content: center; /* Center align items horizontally */
+    font-size: 22px; /* Font size for the menu items */
+    line-height: 1.5; /* Line height for spacing between items */
+    font-weight: 600; /* Bold font weight */
+}
+
+/* Style for the navigation list items */
+nav ul li {
+    display: block; /* Display as a block */
+    padding: 15px 20px; /* Padding around each menu item */
+    text-decoration: none; /* No underlines for links */
+    color: #fff; /* Text color for menu items */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Style when hovering over a menu item */
+nav ul li:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    cursor: pointer; /* Cursor changes to a pointer on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************* Header section*******************************/
+.news-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+}
+
+hr {
+    border-top: 1px solid #333;
+}
+
+/* Style for a container that uses flexbox to center its content horizontally */
+.box-flex {
+    /* Use flexbox to arrange child elements horizontally in a row */
+    display: flex;
+    flex-direction: row;
+    /* Horizontally center child elements within the container */
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    gap: 3px;
+}
+/******************************** main section ********************************/
+/* Apply padding to the main container */
+main {
+    padding: 10px;
+}
+/* Style for the grid container for the home page news */
+.news-container-home {
+    display: grid; /* Use grid layout for the container */
+    grid-template-columns: 1fr 1fr 1fr; /* Create 3 equal-width columns */
+    grid-gap: 10px; /* Set a gap of 10 pixels between grid items */
+    background: #ece9e9; /* Set a background color for the container */
+}
+
+/* Style for individual grid items within the home page news container */
+.grid-item-home {
+    display: flex; /* Use flexbox to arrange content within the item */
+    flex-wrap: wrap; /* Allow content to wrap within the flex container */
+    flex-direction: row-reverse; /* Reverse the order of items along the row */
+    justify-content: space-between; /* Distribute content along the main axis */
+    margin-bottom: 30px; /* Add space between grid items */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding around the content */
+}
+/* Style for news article images within grid items on the home page */
+.news-image-home {
+    width: 150px; /* Set the desired width for the image */
+    height: 100px; /* Set the desired height for the image */
+    overflow: hidden; /* Hide any content that overflows the specified dimensions */
+}
+/* Style for the content of news articles within grid items on the home page */
+.content-home {
+    color: #000; /* Set the text color */
+    font-size: 16px; /* Set the font size */
+    line-height: 1.5; /* Set the line height */
+}
+/* Hover effect for grid items on the home page */
+.grid-item-home:hover {
+    transform: scale(1.02); /* Enlarge the item on hover */
+    background-color: #fff; /* Change the background color on hover */
+}
+/* Style for the category heading within grid items on the home page */
+.category-home {
+    color: #000; /* Set the text color */
+    font-size: 20px; /* Set the font size */
+    font-weight: 400; /* Set the font weight */
+    letter-spacing: -1px; /* Adjust letter spacing */
+    text-align: center; /* Center-align the text */
+    text-decoration: underline; /* Add an underline to the text */
+}
+/* Style for the title of news articles within grid items on the home page */
+.title-home {
+    color: #000; /* Set the text color */
+    font-size: 18px; /* Set the font size */
+    font-weight: 500; /* Set the font weight */
+    letter-spacing: -1px; /* Adjust letter spacing */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    display: inline; /* Display the title as inline content */
+}
+/* Style for the date of news articles within grid items on the home page */
+.date-home {
+    color: #000; /* Set the text color */
+    font-size: 12px; /* Set the font size */
+    line-height: 1.5; /* Set the line height */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************* main section with category**************************/
+.news-container-category {
+
+display: grid;
+width: 80vw;
+/* 3 columns */
+grid-template-rows: 1fr 1fr 1fr;
+grid-gap: 10px;
+background: #ece9e9;
+padding-top: 20px;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 20px;
+}
+
+.grid-item-category {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+text-align: left;
+padding-top: 20px;
+padding-left: 100px;
+padding-right: 100px;
+padding-bottom: 20px;
+align-items: normal;
+align-content: center;
+justify-content: center;
+gap: 10px;
+}
+
+.title-category {
+color: #000;
+font-size: 32px;
+font-weight: 500;
+letter-spacing: -1px;
+margin-bottom: 20px;
+display: inline;
+}
+
+.news-image-category {
+width: 600px;
+/* Set the desired width */
+height: 350px;
+/* Set the desired height */
+overflow: hidden;
+}
+
+.category {
+color: #000;
+font-size: 20px;
+font-weight: 400;
+letter-spacing: -1px;
+text-align: center;
+text-decoration: underline;
+}
